@@ -1,11 +1,11 @@
 {
-    "name": "radioactive-syntax",
-    "theme": "syntax",
-    "version": "0.0.0",
-    "description": "Energize your code.",
-    "repository": "https://github.com/timglorioso/radioactive-syntax",
-    "license": "MIT",
-    "engines": {
-        "atom": ">0.50.0"
-    }
+  "name": "radioactive-syntax",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "Energize your code.",
+  "repository": "https://github.com/timglorioso/radioactive-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
 }
