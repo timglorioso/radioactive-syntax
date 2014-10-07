@@ -82,13 +82,13 @@
 }
 
 .entity,
-.variable,
-.keyword.operator {
+.variable {
     color: @light-gray;
 }
 
 .keyword.control,
 .keyword.other,
+.keyword.operator,
 .storage {
     color: @white;
 }
@@ -121,6 +121,24 @@
 
     &.storage.type {
         color: @white;
+    }
+}
+
+.coffee {
+
+    &.function {
+
+        &.support {
+            color: @white;
+
+            &.console {
+                color: @light-gray;
+            }
+        }
+
+        &.storage.type {
+            color: @white;
+        }
     }
 }
 
