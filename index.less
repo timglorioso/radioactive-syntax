@@ -2,186 +2,188 @@
 
 // Editor interface
 
-.editor-colors {
-    background-color: @syntax-background-color;
-    color: @syntax-text-color;
+.editor-colors,
+:host {
+   background-color: @syntax-background-color;
+   color: @syntax-text-color;
 }
 
-.editor {
+.editor,
+:host {
 
-    .wrap-guide {
-        background-color: @syntax-wrap-guide-color;
-    }
+   .wrap-guide {
+      background-color: @syntax-wrap-guide-color;
+   }
 
-    .indent-guide {
-        color: @syntax-indent-guide-color;
-    }
+   .indent-guide {
+      color: @syntax-indent-guide-color;
+   }
 
-    .invisible,
-    .invisible-character {
-        color: @syntax-invisible-character-color;
-    }
+   .invisible,
+   .invisible-character {
+      color: @syntax-invisible-character-color;
+   }
 
-    .gutter {
-        background-color: @syntax-gutter-background-color;
-        color: @syntax-gutter-text-color;
+   .gutter {
+      background-color: @syntax-gutter-background-color;
+      color: @syntax-gutter-text-color;
 
-        .line-number {
+      .line-number {
 
-            &.cursor-line {
-                background-color: @syntax-gutter-background-color-selected;
-                color: @syntax-gutter-text-color-selected;
-            }
+         &.cursor-line {
+            background-color: @syntax-gutter-background-color-selected;
+            color: @syntax-gutter-text-color-selected;
+         }
 
-            &.git-line-added {
-                border-left-color: @syntax-color-added;
-            }
+         &.git-line-added {
+            border-left-color: @syntax-color-added;
+         }
 
-            &.git-line-modified {
-                border-left-color: @syntax-color-modified;
-            }
+         &.git-line-modified {
+            border-left-color: @syntax-color-modified;
+         }
 
-            &.git-line-removed:before {
-                border-left-color: @syntax-color-removed;
-            }
-        }
-    }
+         &.git-line-removed:before {
+            border-left-color: @syntax-color-removed;
+         }
+      }
+   }
 
-    .gutter .line-number.folded,
-    .gutter .line-number:after,
-    .fold-marker:after {
-        color: @magenta;
-    }
+   .gutter .line-number.folded,
+   .gutter .line-number:after,
+   .fold-marker:after {
+      color: @magenta;
+   }
 
-    .cursor {
-        border-left: 2px solid @syntax-cursor-color;
-    }
+   .cursor {
+      border-left: 2px solid @syntax-cursor-color;
+   }
 
-    .cursor-line {
-        background-color: @syntax-gutter-background-color-selected;
-    }
+   .cursor-line {
+      background-color: @syntax-gutter-background-color-selected;
+   }
 
-    .highlight.selection .region {
-        background-color: @syntax-selection-color;
-    }
-}
+   .highlight.selection .region {
+      background-color: @syntax-selection-color;
+   }
 
-.bracket-matcher {
-    border: 1px solid @gray;
-}
+   .region.bracket-matcher {
+      background-color: @transparent-magenta;
+   }
 
-// Common tokens
+   // Common tokens
 
-.source {
-    color: @light-gray;
-}
+   .source {
+      color: @light-gray;
+   }
 
-.comment,
-.source.embedded .comment {
-    color: @gray;
-}
+   .comment,
+   .source.embedded .comment {
+      color: @gray;
+   }
 
-.entity,
-.variable {
-    color: @light-gray;
-}
+   .entity,
+   .variable {
+      color: @light-gray;
+   }
 
-.keyword.control,
-.keyword.other,
-.keyword.operator,
-.storage {
-    color: @white;
-}
+   .keyword.control,
+   .keyword.other,
+   .keyword.operator,
+   .storage {
+      color: @white;
+   }
 
-.constant,
-.keyword.unit,
-.string {
-    color: @atomic-green;
-}
+   .constant,
+   .keyword.unit,
+   .string {
+      color: @atomic-green;
+   }
 
-.source .string {
+   .source .string {
 
-    .source,
-    .meta.embedded.line {
-        color: @atomic-green;
-    }
+      .source,
+      .meta.embedded.line {
+         color: @atomic-green;
+      }
 
-    .punctuation.section.embedded {
-        color: @atomic-green;
+      .punctuation.section.embedded {
+         color: @atomic-green;
 
-        .source {
+         .source {
             color: @atomic-green;
-        }
-    }
-}
+         }
+      }
+   }
 
-// Language-specific tokens
+   // Language-specific tokens
 
-.c {
+   .c {
 
-    &.storage.type {
-        color: @white;
-    }
-}
+      &.storage.type {
+         color: @white;
+      }
+   }
 
-.coffee {
+   .coffee {
 
-    &.function {
+      &.function {
 
-        &.support {
+         &.support {
             color: @white;
 
             &.console {
-                color: @light-gray;
+               color: @light-gray;
             }
-        }
+         }
 
-        &.storage.type {
+         &.storage.type {
             color: @white;
-        }
-    }
-}
+         }
+      }
+   }
 
-.css {
+   .css {
 
-    &.support.type.property-name {
-        color: @white;
-    }
-}
+      &.support.type.property-name {
+         color: @white;
+      }
+   }
 
-.gfm {
+   .gfm {
 
-    &.heading {
-        color: @white;
-    }
+      &.heading {
+         color: @white;
+      }
 
-    &.comment.quote {
-        color: @light-gray;
-    }
-}
+      &.comment.quote {
+         color: @light-gray;
+      }
+   }
 
-.html {
+   .html {
 
-    &.entity.other.attribute-name,
-    &.meta.tag.doctype {
-        color: @white;
-    }
-}
+      &.entity.other.attribute-name,
+      &.meta.tag.doctype {
+         color: @white;
+      }
+   }
 
-.java {
+   .java {
 
-    &.storage {
+      &.storage {
 
-        &.type {
+         &.type {
             color: @light-gray;
 
             &.primitive {
-                color: @white;
+               color: @white;
             }
-        }
+         }
 
-        &.modifier.import {
+         &.modifier.import {
             color: @atomic-green;
-        }
-    }
+         }
+      }
+   }
 }
