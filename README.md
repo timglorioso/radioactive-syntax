@@ -1,12 +1,8 @@
-# Radioactive syntax theme for Atom
+# radioactive syntax theme for Atom
 
-Inspired by CarbonightBlue for Sublime. Pairs well with Quantum UI.
+Inspired by CarbonightBlue for Sublime.
 
-## Screenshot
+Although I recommend extended periods of use, you should consult the license before trying to sue me for undesired side-effects.
 
 ![screenshot](https://raw.githubusercontent.com/timglorioso/radioactive-syntax/master/screenshot.png)
 
-## Contributing
-
-I don't use every language out there, so feel free to submit issues, pull
-requests, or suggestions for language support.
