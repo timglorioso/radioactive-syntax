@@ -1,15 +1,11 @@
-@import 'stylesheets/syntax-variables.less';
+@import 'styles/syntax-variables.less';
 
 // Editor interface
 
-.editor-colors,
+atom-text-editor,
 :host {
    background-color: @syntax-background-color;
    color: @syntax-text-color;
-}
-
-.editor,
-:host {
 
    .wrap-guide {
       background-color: @syntax-wrap-guide-color;
@@ -91,7 +87,7 @@
    .keyword.other,
    .keyword.operator,
    .storage {
-      color: @white;
+      color: @light-gray; // @white
    }
 
    .constant,
@@ -121,7 +117,7 @@
    .c {
 
       &.storage.type {
-         color: @white;
+         color: @light-gray; // @white
       }
    }
 
@@ -130,7 +126,7 @@
       &.function {
 
          &.support {
-            color: @white;
+            color: @light-gray; // @white
 
             &.console {
                color: @light-gray;
@@ -138,7 +134,7 @@
          }
 
          &.storage.type {
-            color: @white;
+            color: @light-gray; // @white
          }
       }
    }
@@ -146,14 +142,14 @@
    .css {
 
       &.support.type.property-name {
-         color: @white;
+         color: @light-gray; // @white
       }
    }
 
    .gfm {
 
       &.heading {
-         color: @white;
+         color: @light-gray; // @white
       }
 
       &.comment.quote {
@@ -165,7 +161,7 @@
 
       &.entity.other.attribute-name,
       &.meta.tag.doctype {
-         color: @white;
+         color: @light-gray; // @white
       }
    }
 
@@ -177,13 +173,20 @@
             color: @light-gray;
 
             &.primitive {
-               color: @white;
+               color: @light-gray; // @white
             }
          }
 
          &.modifier.import {
             color: @atomic-green;
          }
+      }
+   }
+
+   .sass {
+
+      &.meta {
+         color: @light-gray;
       }
    }
 }
