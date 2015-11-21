@@ -91,7 +91,7 @@ atom-text-editor,
       color: @light-gray;
    }
 
-   .constant,
+   .constant.numeric,
    .keyword.unit,
    .string {
       color: @atomic-green;
@@ -111,5 +111,10 @@ atom-text-editor,
             color: @atomic-green;
          }
       }
+   }
+
+   // special constant rules
+   .css.other.constant {
+      color: @atomic-green;
    }
 }
