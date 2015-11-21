@@ -64,6 +64,7 @@ atom-text-editor,
    }
 
    .region.bracket-matcher {
+      border: 0;
       background-color: @transparent-magenta;
    }
 
@@ -87,7 +88,7 @@ atom-text-editor,
    .keyword.other,
    .keyword.operator,
    .storage {
-      color: @light-gray; // @white
+      color: @light-gray;
    }
 
    .constant,
@@ -109,84 +110,6 @@ atom-text-editor,
          .source {
             color: @atomic-green;
          }
-      }
-   }
-
-   // Language-specific tokens
-
-   .c {
-
-      &.storage.type {
-         color: @light-gray; // @white
-      }
-   }
-
-   .coffee {
-
-      &.function {
-
-         &.support {
-            color: @light-gray; // @white
-
-            &.console {
-               color: @light-gray;
-            }
-         }
-
-         &.storage.type {
-            color: @light-gray; // @white
-         }
-      }
-   }
-
-   .css {
-
-      &.support.type.property-name {
-         color: @light-gray; // @white
-      }
-   }
-
-   .gfm {
-
-      &.heading {
-         color: @light-gray; // @white
-      }
-
-      &.comment.quote {
-         color: @light-gray;
-      }
-   }
-
-   .html {
-
-      &.entity.other.attribute-name,
-      &.meta.tag.doctype {
-         color: @light-gray; // @white
-      }
-   }
-
-   .java {
-
-      &.storage {
-
-         &.type {
-            color: @light-gray;
-
-            &.primitive {
-               color: @light-gray; // @white
-            }
-         }
-
-         &.modifier.import {
-            color: @atomic-green;
-         }
-      }
-   }
-
-   .sass {
-
-      &.meta {
-         color: @light-gray;
       }
    }
 }
