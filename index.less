@@ -2,8 +2,7 @@
 
 // Editor interface
 
-atom-text-editor,
-:host {
+atom-text-editor {
    background-color: @syntax-background-color;
    color: @syntax-text-color;
 
@@ -70,44 +69,44 @@ atom-text-editor,
 
    // Common tokens
 
-   .source {
+   .syntax--source {
       color: @light-gray;
    }
 
-   .comment,
-   .source.embedded .comment {
+   .syntax--comment,
+   .syntax--source.syntax--embedded .syntax--comment {
       color: @gray;
    }
 
-   .entity,
-   .variable {
+   .syntax--entity,
+   .syntax--variable {
       color: @light-gray;
    }
 
-   .keyword.control,
-   .keyword.other,
-   .keyword.operator,
-   .storage {
+   .syntax--keyword.syntax--control,
+   .syntax--keyword.syntax--other,
+   .syntax--keyword.syntax--operator,
+   .syntax--storage {
       color: @light-gray;
    }
 
-   .constant.numeric,
-   .keyword.unit,
-   .string {
+   .syntax--constant.syntax--numeric,
+   .syntax--keyword.syntax--unit,
+   .syntax--string {
       color: @atomic-green;
    }
 
-   .source .string {
+   .syntax--source .syntax--string {
 
-      .source,
-      .meta.embedded.line {
+      .syntax--source,
+      .syntax--meta.syntax--embedded.syntax--line {
          color: @atomic-green;
       }
 
-      .punctuation.section.embedded {
+      .syntax--punctuation.syntax--section.syntax--embedded {
          color: @atomic-green;
 
-         .source {
+         .syntax--source {
             color: @atomic-green;
          }
       }
@@ -115,11 +114,11 @@ atom-text-editor,
 
    // special constant rules
 
-   .css.other.constant {
+   .syntax--css.syntax--other.syntax--constant {
       color: @atomic-green;
    }
 
-   .java.language.constant {
+   .syntax--java.syntax--language.syntax--constant {
       color: @atomic-green;
    }
 }
